@@ -104,6 +104,8 @@ public class MenuPrincipal extends JFrame {
 						String mensajeProcesado = traductor.procesar(mensajeIngresado, opcion, semilla);
 						txtMensajeDevuelto.setText(mensajeProcesado);
 						JOptionPane.showMessageDialog(MenuPrincipal.this, "Operacion realizada exitosamente", "Exito", JOptionPane.INFORMATION_MESSAGE);
+					} else {
+						JOptionPane.showMessageDialog(MenuPrincipal.this, "El mensaje contiene caracteres invalidos", "Error", JOptionPane.ERROR_MESSAGE);
 					}
 					
 				} catch (Exception ex) {
